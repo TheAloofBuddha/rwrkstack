@@ -1,0 +1,156 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.grid-item {
+  height: 500px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  /* grid-template-columns: repeat(3, 1fr); to repeat the grids, making it non hardcoded */
+  /* gap: 10px; */
+}
+
+.container{
+  background-image: url('https://plus.unsplash.com/premium_photo-1665413642308-c5c1ed052d12?q=80&w=2909&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  margin-bottom: 20px;
+}
+
+.overlay{
+  background-color: rgba(0, 0, 0, 0.662);
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay h1{
+  color: wheat;
+  font-weight: 400;
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.bg_1{
+  background-image: url('https://media.istockphoto.com/id/2155748905/photo/trendy-fashion-shoes-isolated-on-white-background-black-and-white-sneakers-casual-shoes.jpg?s=1024x1024&w=is&k=20&c=n9nwLQ84xIZkvSbmwR7r-VyUyk_vjh-W8BTQQBsCgb8=');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg_2{
+  background-image: url('https://images.unsplash.com/photo-1715692965448-770874c71e7c?q=80&w=2952&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.text{
+  background-color: #dddddd1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text h1{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.3em;font-style: italic;font-weight: 100;
+}
+
+.grid2{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-top: 10px;
+  height: 250px;
+}
+
+.grid3{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 250px;
+  margin-top: 5px;
+}
+
+.grid2 .img-box{
+  background-image: url('https://plus.unsplash.com/premium_photo-1667762240969-c1b16cf23a1c?q=80&w=3088&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-position: 25% 40%;
+  /* background-position: center; */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.grid3 .img-box{
+  background-image: url('https://plus.unsplash.com/premium_photo-1664537981586-e550b3bd9872?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.textbox{
+  background-color: #dddddd1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.textbox h1{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.3em;font-style: italic;font-weight: 100;
+}
+
+@media (max-width: 425px){
+  .grid{
+    grid-template-columns: 1fr;
+  }
+  .grid2{
+    grid-template-columns: 1fr;
+  }
+  .grid3{
+    grid-template-columns: 1fr;
+  }
+
+  .grid2 .img-box{
+    order: +1;
+  }
+  .order{
+    order: -1;
+  }
+  
+.text{
+  padding: 10px;
+  text-align: center;
+}
+}
+
+/* @media (max-width: 428px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) and (orientation: landscape) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    margin: auto; /*centers everything*/
+  }
+} */
+
